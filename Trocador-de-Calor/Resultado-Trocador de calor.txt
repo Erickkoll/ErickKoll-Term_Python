@@ -1,0 +1,236 @@
+Aluno: Erick Cordeiro Kollross  GRR:20124195
+Programa criado para diciplica de transferência de Calor e massa via Python
+Dimensionamento de um trocador de calor
+para todas as condições dos exercícios será considerado regime turbulento tanto no escoamento interno quanto no interno. E o comprimento próximo ao diâmetro do tubo
+item a
+calor específico da água 4.179
+calor específico da óleo 2.4402
+Consideraremos que Cmin será igual á Cq
+Cmin=Cq= 0.536844 W/K
+qmax= 112.73724 W
+A troca de calor do sistema é: 107.3688 W
+a vazão massica do fluído frio é: 5.24335965541998
+
+Consideraremos que Cmin será igual á Cq
+Cmax=Cf= 107.36879999999998 W/K
+Cr= 0.005000000000000001
+Com isso aproximamos Cr para 0, e temos que NUT=ln*(1-epsilion)
+efetividade do sitema= 0.9523809523809523
+NUT= 3.0445224377234217
+Dado que Red=4*mdot/pi*d*mi, e sabendo que para escoamento turbulento Red>2300
+Para fins de calculo consideraremos Red=3000, para que possamos estabelecer certas relações com equações que exigem que renolds seja superior a 3000
+viscosidade do óleo= 0.005358 N*s/m**2
+0.017426405674874156
+O valor máximo em milímetros dos tubos para serem turbulentos são: 17.426405674874154 mm
+Para questões de projeto os tubos escolhidos terão como dimensão interna 17.0 mm
+
+Apartir disso podemos calcular a entalpia do interna, mas antes será calculado o novo Red interno
+Red interno= 3075.2480602719093
+Será calculado o coeficiente de atrito 'fi'
+f interno= 0.04518084584309538
+Pr será determinado pela tabela
+Pr interno= 98.5
+Com isso podemos determinar o Nud
+Nud interno= 1145.009481073759
+k será determinado pela tabela
+k interno= 0.13269999999999998
+
+Para determinarmos a entalpia interna necessitamos do 'dh', que é dado  tanto em função do diâmetro interno(di) como do externo(de). Para isso calcularemos primeiramento o 'de'
+viscosidade da agua= 0.0006309999999999999 N*s/m**2
+3.526696909176182
+O valor máximo em milímetros dos tubos para serem turbulentos são: 3526.696909176182 mm
+Ou seja, o tubo pode ter o tamanho que se desejar, para tal usaremos que o diâmetro externo é o dobro do interno
+A dimensão externa do tudo será= 34 mm
+Red externo= 311179.13904495724
+Será calculado o coeficiente de atrito 'fe'
+f externo= 0.014335642365172895
+'Pr' externo será determinado pela tabela
+Pr externo= 4.16
+Com isso podemos determinar o Nud
+Nud externo= 764.3711723124942
+k externo será determinado pela tabela
+k externo= 0.634
+dh= 17 mm
+entalpia interna= 8937.809302263988
+entalpia externa= 28506.54842624243
+Temos que 1/U=1/hi+1/he
+U= 6804.392147592896 W/(m**2*K)
+Assim temos que a área transversal do trocador de calor será= 0.0002402027349548608 m**2
+O comprimento do tubo será(L)= 1.1243930357464011 mm
+Como podemos observar, o comprimento L é bem menor em relação ao diâmetro externo. Para isso refazeremos os calculos dividindo em tubos o projeto
+O número de tubos será 2
+O diâmetro interno será 0.0085
+A vazão quente do tubo será 0.11
+O novo renolds calculado será Redi= 3075.2480602719093
+COmo podemos observar o Renolds se manteve constante. Isso porque a vazão e o diâmetro são inversamente proporcionais
+Com isso podemos concluir que as propriedades da água se manteram constantes, mudando somente a entalpia
+O diâmetro externo será 0.017
+A nova entalpia interna= 17875.618604527976
+A nova entalpia externa= 57013.09685248486
+O novo coeficiente global de transferência de calor será U= 6804.392147592896 W/(m**2*K)
+Fazendo a razão entre os coeficiente globais temos que r= 2.0
+Ou seja 'U' varia é inversamente proporcional ao diâmetro. No entando ambos os tubos estão em paralelo.
+Ou seja o coeficiente global se manterá constante= 6804.392147592896
+Ou seja, nada muda exceto o diâmetro do tubo e a quantidade dele.
+Para mantermos o escolament idela faremos com que o tamanho dos tubos sejam iguais á seu comprimento
+O número de tubos utilizados será 30
+O diâmetro externo de cada tubo será 1.1 mm
+O diâmetro interno de cada tubo será 0.55 mm
+Como demonstramos todas as propriedades se mantiveram constantes. Ou seja todos os coeficiente já foram calculados
+Iremos considerar um fator de empacotamento dos tubos de 0.5
+O diâmtro interno total do trocador será 9.0 mm e recalculado um fator de empacotamento de 0.448
+O trocador de calor terá uma chapa de aço de 1mm de espessura totalizando 11.0 mm
+O comprimento do trocador recalculado será 1.1584655519811404 mm
+Para suportar as tensões o material usado será grafeno industrial
+
+
+item b
+
+No programa serão somente mudadas as variaveis das propriedades do fluido quente, em todo resto será tudo igual
+No caso iremos considerar vapor de água saturada nas mesmas condições de temperatura e pressão
+calor específico da água 4.179
+calor específico do vapor de água 2.3144
+Consideraremos que Cmin será igual á Cq
+Cmin=Cq= 0.509168 W/K
+qmax= 106.92527999999999 W
+A troca de calor do sistema é: 101.83359999999999 W
+a vazão massica do fluído frio é: 4.973047941358906
+
+Consideraremos que Cmin será igual á Cq
+Cmax=Cf= 101.83359999999999 W/K
+Cr= 0.005
+Com isso aproximamos Cr para 0, e temos que NUT=ln*(1-epsilion)
+efetividade do sitema= 0.9523809523809524
+NUT= 3.0445224377234243
+Dado que Red=4*mdot/pi*d*mi, e sabendo que para escoamento turbulento Red>2300
+Para fins de calculo consideraremos Red=3000, para que possamos estabelecer certas relações com equações que exigem que renolds seja superior a 3000
+viscosidade do óleo= 1.3894999999999998e-05 N*s/m**2
+6.719732393377167
+O valor máximo em milímetros dos tubos para serem turbulentos são: 6719.732393377167 mm
+Para questões de projeto os tubos escolhidos terão como dimensão interna 6719.0 mm
+
+Apartir disso podemos calcular a entalpia do interna, mas antes será calculado o novo Red interno
+Red interno= 3000.327009991294
+Será calculado o coeficiente de atrito 'fi'
+f interno= 0.04555742968041227
+Pr será determinado pela tabela
+Pr interno= 1.0825
+Com isso podemos determinar o Nud
+Nud interno= 12.330719648787827
+k será determinado pela tabela
+k interno= 0.92082
+
+Para determinarmos a entalpia interna necessitamos do 'dh', que é dado  tanto em função do diâmetro interno(di) como do externo(de). Para isso calcularemos primeiramento o 'de'
+viscosidade da agua= 0.0006309999999999999 N*s/m**2
+3.3448845695423963
+O valor máximo em milímetros dos tubos para serem turbulentos são: 3344.8845695423965 mm
+Ou seja, o tubo pode ter o tamanho que se desejar, para tal usaremos que o diâmetro externo é o dobro do interno
+A dimensão externa do tudo será= 13438 mm
+Red externo= 746.7371415855923
+Será calculado o coeficiente de atrito 'fe'
+f externo= 0.07774622107531828
+'Pr' externo será determinado pela tabela
+Pr externo= 4.16
+Com isso podemos determinar o Nud
+Nud externo= 21.676975970385815
+k externo será determinado pela tabela
+k externo= 0.634
+dh= 6719 mm
+entalpia interna= 1.6898903507957743
+entalpia externa= 2.0454238376580753
+Temos que 1/U=1/hi+1/he
+U= 0.9253684783010991 W/(m**2*K)
+Assim temos que a área transversal do trocador de calor será= 1.675195813257819 m**2
+O comprimento do tubo será(L)= 19.840383305909896 mm
+Como podemos observar, o comprimento L é bem menor em relação ao diâmetro externo. Para isso refazeremos os calculos dividindo em tubos o projeto
+Para mantermos o escolament ideal faremos com que o tamanho dos tubos sejam iguais á seu comprimento
+O número de tubos utilizados será 677
+O diâmetro externo de cada tubo será 20.0 mm
+O diâmetro interno de cada tubo será 10.0 mm
+Como demonstramos todas as propriedades se mantiveram constantes. Ou seja todos os coeficiente já foram calculados
+Iremos considerar um fator de empacotamento dos tubos de 0.5
+O diâmtro interno total do trocador será 736.0 mm e recalculado um fator de empacotamento de 0.5
+O trocador de calor terá uma chapa de aço de 10mm de espessura totalizando 756.0 mm de diâmetro
+O comprimento do trocador recalculado será 19.6909210387605 mm
+O material utilizado será aço 1020
+
+
+item c
+
+Será considerada água saturada no estado de vapor
+calor específico da óleo 1.972
+calor específico da água 0.3968
+Consideraremos que Cmin será igual á Cq
+Cmin=Cq= 0.087296 W/K
+qmax= 18.33216 W
+A troca de calor do sistema é: 17.4592 W
+a vazão massica do fluído frio é: 1.8068468766817156
+
+Consideraremos que Cmin será igual á Cq
+Cmax=Cf= 17.4592 W/K
+Cr= 0.005
+Com isso aproximamos Cr para 0, e temos que NUT=ln*(1-epsilion)
+efetividade do sitema= 0.9523809523809524
+NUT= 3.0445224377234243
+Dado que Red=4*mdot/pi*d*mi, e sabendo que para escoamento turbulento Red>2300
+Para fins de calculo consideraremos Red=3000, para que possamos estabelecer certas relações com equações que exigem que renolds seja superior a 3000
+viscosidade da óleo= 0.197 N*s/m**2
+0.003892628620982929
+O valor máximo em milímetros dos tubos para serem turbulentos são: 3.8926286209829293 mm
+A dimensão externa do tudo será= 3 mm
+Red externo= 3892.6286209829286
+Será calculado o coeficiente de atrito 'fe'
+f externo= 0.041806090955587356
+'Pr' externo será determinado pela tabela
+Pr externo= 2682.5
+Com isso podemos determinar o Nud
+Nud= 36466.681162540015
+k externo será determinado pela tabela
+k externo= 0.14400000000000002
+Ou seja, o tubo pode ter o tamanho que se desejar, para tal usaremos que o diâmetro externo é o dobro do interno
+viscosidade do água= 1.3894999999999998e-05 N*s/m**2
+Para questões de projeto os tubos escolhidos terão como dimensão interna 1.5 mm
+
+Apartir disso podemos calcular a entalpia do interna, mas antes será calculado o novo Red interno
+Red interno= 13439464.786754332
+Será calculado o coeficiente de atrito 'fi'
+f interno= 0.007794412827442185
+Pr será determinado pela tabela
+Pr interno= 1.0825
+Com isso podemos determinar o Nud
+Nud interno= 14173.290733945603
+k será determinado pela tabela
+k interno= 0.92082
+
+Para determinarmos a entalpia interna necessitamos do 'dh', que é dado  tanto em função do diâmetro interno(di) como do externo(de). Para isso calcularemos primeiramento o 'de'
+dh= 1 mm
+entalpia interna= 8700699.715754526
+entalpia externa= 3500801.3916038414
+Temos que 1/U=1/hi+1/he
+U= 2496366.750683767 W/(m**2*K)
+Assim temos que a área transversal do trocador de calor será= 1.0646457723037174e-07 m**2
+O comprimento do tubo será(L)= 0.0056481080357340075 mm
+Como podemos observar, o comprimento L é bem menor em relação ao diâmetro externo. Para isso refazeremos os calculos dividindo em tubos o projeto
+Para mantermos o escolament ideal faremos com que o tamanho dos tubos sejam iguais á seu comprimento
+O número de tubos utilizados será 531
+O diâmetro externo de cada tubo será 0.006 mm
+O diâmetro interno de cada tubo será 0.003 mm
+Como demonstramos todas as propriedades se mantiveram constantes. Ou seja todos os coeficiente já foram calculados
+Iremos considerar um fator de empacotamento dos tubos de 0.5
+O diâmtro interno total do trocador será 0.2 mm e recalculado um fator de empacotamento de 0.478
+O trocador de calor terá uma chapa de aço de 0.1mm de espessura totalizando 0.4 mm de diâmetro
+O comprimento do trocador recalculado será 0.0053183691485254305 mm
+Para suportar as tensões o material do tubo será grafeno feito em laboratório, os tubos interno serão de gráfeno da mais alta qualidade arranjados a nível atómico
+
+
+item d
+
+As perdas de calor na superfície se darão por convecção
+Será considerado que a temperatura na vizinhança como 277K
+O ar incidirá sobre a superfície externa do cilindro num escoamento cruzado á 10 m/s
+Será considerado que o escoamento do ar será parelelo seções da base do cilindro, considerando que suas perdas seriam despreziveis
+Propriedades do ar á 325k
+O valor do Renolds do ar é  219.11804984935634
+O valor do Nud do ar é 
+A eltalpia do ar é  116.61202408916301 W/m**2*K
+A perda de calor é  2.3815134384495703e-05 W
